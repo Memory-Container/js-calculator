@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+
+.odometer {
+  background: #0f1f3d;
+  color: #75c7f0;
+  height: 100%;
+  padding: 20px;
+}
+.odometer h1 {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.number-ticker {
+  display: flex;
+  font-size: 72px;
+  justify-content: center;
+  overflow: hidden;
+}
+.number-ticker .digit {
+  background: #030917;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+.number-ticker .digit:first-child .col-num {
+  border-left: 1px solid #75c7f0;
+}
+.number-ticker .digit .col-num {
+  background: #030917;
+  width: 100%;
+  border-right: 1px solid #75c7f0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

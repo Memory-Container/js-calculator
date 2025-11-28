@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New';
+    font-weight: 600;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #f0f0f0, #656565);
+}
+@font-face {
+  font-family: "Seven_Segment";
+  src: url(TRUEMonospacedSevenSegment.ttf);
+}
+input, button {
+    font-family: "Seven_Segment";
+}
+input {
+    font-size: 23px;
+    height: 40px;
+    padding-left: 8px;
+}
+input:focus {
+    outline: none;
+}
+.container {
+    width: 100%;
+    max-width: 540px;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: 3px solid black;
+    box-shadow: 0 0px 40px rgb(100, 100, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+.display {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.number-container {
+    font-size: 32px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: hidden;
+    align-items: center;
+    height: 36px;
+    position: relative;
+}
+.number-container:first-child {
+    border-left: 1px solid black;
+}
+.number {
+    transform: translateY(calc(16px * 0));
+    transition: 0.25s;
+    div {
+        font-family: "Seven_Segment";
+        line-height: 100%;
+    }
+}
+.input-display {
+    display: flex;  
+    flex-direction: row;
+    gap: 10px;
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.operation-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    .operation-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .operation {
+        height: 48px;
+        width: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 300;
+    }
+}

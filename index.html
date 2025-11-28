@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Calculator</h1>
+        <section class="input-display">
+            <div class="input-container">
+                <label>Input 1</label>
+                <input type="number" id="first">
+            </div>
+            <div class="input-container">
+                <label>Input 2</label>
+                <input type="number" id="second">
+            </div>
+        </section>
+        <section class="operation-display">
+            <div>
+                Operations
+            </div>
+            <div class="operation-container">
+                <button class="operation" onclick="operation('+')">
+                    +
+                </button>
+                <button class="operation" onclick="operation('-')">
+                    -
+                </button>
+                <button class="operation" onclick="operation('*')">
+                    *
+                </button>
+                <button class="operation" onclick="operation('/')">
+                    /
+                </button>
+            </div>
+        </section>
+        <div class="display">
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
