@@ -23,6 +23,7 @@ input, button {
     font-family: "Seven_Segment";
 }
 input {
+    letter-spacing: 2px;
     font-size: 23px;
     height: 40px;
     padding-left: 8px;
